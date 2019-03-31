@@ -1,0 +1,5 @@
+wpantund (0.07.01-289-gaee08de-1ubuntu1) bionic; urgency=medium
+
+  * Initial release (Closes: #1)
+
+ -- soburi <soburi@gmail.com>  Sun, 31 Mar 2019 08:53:34 +0900
