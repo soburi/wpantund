@@ -1,0 +1,47 @@
+--- a/configure.ac
++++ b/configure.ac
+@@ -50,8 +50,9 @@
+ 
+ dnl Attempt to include a reasonable git tag description.
+ SOURCE_VERSION=m4_esyscmd([
++        changelogver=`dpkg-parsechangelog --show-field Version | sed 's/^[^-]*-[0-9]*-g\([0-9a-f]*\)-[^-]*$/\1/'` && printf "$xxx"
+ 	configver="$PACKAGE_VERSION"
+-	(test -d .git && gitver=`git describe --dirty --match "[0-9].*"` && printf "$gitver") ||
++	(test -d .git && gitver=`git describe $changelogver` && printf "$gitver") ||
+ 	(test -d .git && gitver=`git describe --always` && printf "$configver-g$gitver") ||
+ 	printf "$configver"
+ ])
+--- a/src/Makefile.am
++++ b/src/Makefile.am
+@@ -37,7 +37,7 @@
+ 	$(NULL)
+ 
+ SOURCE_VERSION=$(shell                                            \
+-	git describe --dirty --always --match "[0-9].*" 2> /dev/null  \
++	git describe `dpkg-parsechangelog -l $(top_builddir)/debian/changelog --show-field Version | sed 's/^[^-]*-[0-9]*-g\([0-9a-f]*\)-[^-]*$$/\1/'`  \
+ )
+ 
+ CLEANFILES    = $(top_builddir)/$(subdir)/version.c
+--- a/src/wpanctl/Makefile.am
++++ b/src/wpanctl/Makefile.am
+@@ -120,7 +120,8 @@
+ 	$(NULL)
+ 
+ 
+-SOURCE_VERSION=$(shell git describe --dirty --always --match "[0-9].*" 2> /dev/null)
++SOURCE_VERSION=$(shell git describe `dpkg-parsechangelog -l $(top_builddir)/debian/changelog --show-field Version | sed 's/^[^-]*-[0-9]*-g\([0-9a-f]*\)-[^-]*$$/\1/'`)
++
+ BUILT_SOURCES  = $(top_builddir)/$(subdir)/version.c
+ CLEANFILES = $(top_builddir)/$(subdir)/version.c
+ .INTERMEDIATE: wpanctl-version.$(OBJEXT)
+--- a/src/wpantund/Makefile.am
++++ b/src/wpantund/Makefile.am
+@@ -102,7 +102,7 @@
+ 	$(NULL)
+ 
+ SOURCE_VERSION=$(shell                                            \
+-	git describe --dirty --always --match "[0-9].*" 2> /dev/null  \
++	git describe `dpkg-parsechangelog -l $(top_builddir)/debian/changelog --show-field Version | sed 's/^[^-]*-[0-9]*-g\([0-9a-f]*\)-[^-]*$$/\1/'`  \
+ )
+ 
+ BUILT_SOURCES  = $(top_builddir)/$(subdir)/version.c
