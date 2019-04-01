@@ -1,5 +1,5 @@
-wpantund (0.07.01-286-g42f9b6e-1ubuntu1) bionic; urgency=medium
+wpantund (0.07.01-286-g42f9b6e-1ubuntu1) disco; urgency=medium
 
-  * Initial release (Closes: #1)
+  * Initial release (Closes: #6)
 
  -- soburi <soburi@gmail.com>  Sun, 31 Mar 2019 08:53:34 +0900
