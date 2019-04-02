@@ -4,3 +4,5 @@ Source: https://github.com/openthread/wpantund
 
 Files: *
 License: Apache-2.0
+Copyright: 2016-2019 Nest Labs, Inc.
+           2016-2019  Nordic Semiconductor

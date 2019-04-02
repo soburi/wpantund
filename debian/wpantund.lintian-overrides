@@ -1,4 +1,4 @@
-wpantund: package-contains-upstream-install-documentation usr/share/doc/wpantund/INSTALL.md.gz
+wpantund: package-contains-upstream-installation-documentation usr/share/doc/wpantund/INSTALL.md.gz
 wpantund: binary-without-manpage usr/bin/spi-hdlc-adapter
 wpantund: wrong-name-for-upstream-changelog usr/share/doc/wpantund/CHANGELOG.gz
 wpantund: dbus-policy-without-send-destination etc/dbus-1/system.d/wpantund.conf <policy group="root"><allow send_interface="org.wpantund.Join"/>

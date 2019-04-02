@@ -1,3 +1,9 @@
+wpantund (0.07.01-286-g42f9b6e-1ubuntu2) disco; urgency=medium
+
+  * Disco Dingo release (Closes: #6)
+
+ -- soburi <soburi@gmail.com>  Tue, 02 Apr 2019 23:32:19 +0900
+
 wpantund (0.07.01-286-g42f9b6e-1ubuntu1) bionic; urgency=medium
 
   * Initial release (Closes: #1)
