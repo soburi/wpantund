@@ -1,0 +1,11 @@
+--- a/src/wpantund/NCPInstance.cpp
++++ b/src/wpantund/NCPInstance.cpp
+@@ -95,7 +95,7 @@
+ 		plugin_path = std::string("ncp-") + ncp_driver_name + ".so";
+ 		symbol_name = std::string("wpantund_ncpinstance_") +ncp_driver_name + "_alloc";
+ 
+-		if( access( (std::string(PKGLIBEXECDIR "/") + plugin_path).c_str(), X_OK ) != -1 ) {
++		if( access( (std::string(PKGLIBEXECDIR "/") + plugin_path).c_str(), R_OK ) != -1 ) {
+ 			plugin_path = std::string(PKGLIBEXECDIR "/") + plugin_path;
+ 		}
+ 
