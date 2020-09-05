@@ -1,23 +1,22 @@
-wpantund: package-contains-upstream-installation-documentation usr/share/doc/wpantund/INSTALL.md.gz
 wpantund: binary-without-manpage usr/bin/spi-hdlc-adapter
-wpantund: wrong-name-for-upstream-changelog usr/share/doc/wpantund/CHANGELOG.gz
-wpantund: dbus-policy-without-send-destination etc/dbus-1/system.d/wpantund.conf <policy group="root"><allow send_interface="org.wpantund.Join"/>
-wpantund: dbus-policy-without-send-destination etc/dbus-1/system.d/wpantund.conf <policy group="root"><allow send_interface="org.wpantund.Form"/>
-wpantund: dbus-policy-without-send-destination etc/dbus-1/system.d/wpantund.conf <policy group="root"><allow send_interface="org.wpantund.Leave"/>
-wpantund: dbus-policy-without-send-destination etc/dbus-1/system.d/wpantund.conf <policy group="root"><allow send_interface="org.wpantund.Attach"/>
-wpantund: dbus-policy-without-send-destination etc/dbus-1/system.d/wpantund.conf <policy group="root"><allow send_interface="org.wpantund.Status"/>
-wpantund: dbus-policy-without-send-destination etc/dbus-1/system.d/wpantund.conf <policy group="root"><allow send_interface="org.wpantund.Reset"/>
-wpantund: dbus-policy-without-send-destination etc/dbus-1/system.d/wpantund.conf <policy group="root"><allow send_interface="org.wpantund.NetScanStart"/>
-wpantund: dbus-policy-without-send-destination etc/dbus-1/system.d/wpantund.conf <policy group="root"><allow send_interface="org.wpantund.NetScanStop"/>
-wpantund: dbus-policy-without-send-destination etc/dbus-1/system.d/wpantund.conf <policy group="root"><allow send_interface="org.wpantund.List"/>
-wpantund: dbus-policy-without-send-destination etc/dbus-1/system.d/wpantund.conf <policy group="root"><allow send_interface="com.nestlabs.WPANTunnelDriver.Join"/>
+wpantund: dbus-policy-at-console etc/dbus-1/system.d/wpantund.conf <policy at_console="true"><allow send_destination="com.nestlabs.WPANTunnelDriver"/>
+wpantund: dbus-policy-at-console etc/dbus-1/system.d/wpantund.conf <policy at_console="true"><allow send_destination="org.wpantund"/>
 wpantund: dbus-policy-without-send-destination etc/dbus-1/system.d/wpantund.conf <policy group="root"><allow send_interface="com.nestlabs.WPANTunnelDriver.Form"/>
+wpantund: dbus-policy-without-send-destination etc/dbus-1/system.d/wpantund.conf <policy group="root"><allow send_interface="com.nestlabs.WPANTunnelDriver.Join"/>
 wpantund: dbus-policy-without-send-destination etc/dbus-1/system.d/wpantund.conf <policy group="root"><allow send_interface="com.nestlabs.WPANTunnelDriver.Leave"/>
+wpantund: dbus-policy-without-send-destination etc/dbus-1/system.d/wpantund.conf <policy group="root"><allow send_interface="com.nestlabs.WPANTunnelDriver.List"/>
+wpantund: dbus-policy-without-send-destination etc/dbus-1/system.d/wpantund.conf <policy group="root"><allow send_interface="com.nestlabs.WPANTunnelDriver.PermitJoin"/>
 wpantund: dbus-policy-without-send-destination etc/dbus-1/system.d/wpantund.conf <policy group="root"><allow send_interface="com.nestlabs.WPANTunnelDriver.Resume"/>
 wpantund: dbus-policy-without-send-destination etc/dbus-1/system.d/wpantund.conf <policy group="root"><allow send_interface="com.nestlabs.WPANTunnelDriver.Scan"/>
-wpantund: dbus-policy-without-send-destination etc/dbus-1/system.d/wpantund.conf <policy group="root"><allow send_interface="com.nestlabs.WPANTunnelDriver.PermitJoin"/>
 wpantund: dbus-policy-without-send-destination etc/dbus-1/system.d/wpantund.conf <policy group="root"><allow send_interface="com.nestlabs.WPANTunnelDriver.Status"/>
-wpantund: dbus-policy-without-send-destination etc/dbus-1/system.d/wpantund.conf <policy group="root"><allow send_interface="com.nestlabs.WPANTunnelDriver.List"/>
-wpantund: dbus-policy-at-console etc/dbus-1/system.d/wpantund.conf <policy at_console="true"><allow send_destination="org.wpantund"/>
-wpantund: dbus-policy-at-console etc/dbus-1/system.d/wpantund.conf <policy at_console="true"><allow send_destination="com.nestlabs.WPANTunnelDriver"/>
-
+wpantund: dbus-policy-without-send-destination etc/dbus-1/system.d/wpantund.conf <policy group="root"><allow send_interface="org.wpantund.Attach"/>
+wpantund: dbus-policy-without-send-destination etc/dbus-1/system.d/wpantund.conf <policy group="root"><allow send_interface="org.wpantund.Form"/>
+wpantund: dbus-policy-without-send-destination etc/dbus-1/system.d/wpantund.conf <policy group="root"><allow send_interface="org.wpantund.Join"/>
+wpantund: dbus-policy-without-send-destination etc/dbus-1/system.d/wpantund.conf <policy group="root"><allow send_interface="org.wpantund.Leave"/>
+wpantund: dbus-policy-without-send-destination etc/dbus-1/system.d/wpantund.conf <policy group="root"><allow send_interface="org.wpantund.List"/>
+wpantund: dbus-policy-without-send-destination etc/dbus-1/system.d/wpantund.conf <policy group="root"><allow send_interface="org.wpantund.NetScanStart"/>
+wpantund: dbus-policy-without-send-destination etc/dbus-1/system.d/wpantund.conf <policy group="root"><allow send_interface="org.wpantund.NetScanStop"/>
+wpantund: dbus-policy-without-send-destination etc/dbus-1/system.d/wpantund.conf <policy group="root"><allow send_interface="org.wpantund.Reset"/>
+wpantund: dbus-policy-without-send-destination etc/dbus-1/system.d/wpantund.conf <policy group="root"><allow send_interface="org.wpantund.Status"/>
+wpantund: package-contains-upstream-installation-documentation usr/share/doc/wpantund/INSTALL.md.gz
+wpantund: wrong-name-for-upstream-changelog usr/share/doc/wpantund/CHANGELOG.gz

@@ -1,0 +1,1 @@
+WPANTUND_OPTS="-o Daemon:SetDefaultRouteForAutoAddedPrefix true -o IPv6:SetSLAACForAutoAddedPrefix true"

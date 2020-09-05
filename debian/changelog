@@ -1,3 +1,9 @@
+wpantund (0.07.01-346-g697af9d-1ubuntu2) focal; urgency=medium
+
+  * Add wpantund.service (Closes: #8)
+
+ -- Tokita Hiroshi <soburi@gmail.com>  Sat, 05 Sep 2020 19:49:47 +0900
+
 wpantund (0.07.01-346-g697af9d-1ubuntu1) focal; urgency=medium
 
   * Focal Fossa release (Close #8)
