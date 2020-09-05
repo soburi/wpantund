@@ -1,0 +1,11 @@
+--- a/src/wpantund/wpantund.conf
++++ b/src/wpantund/wpantund.conf
+@@ -16,6 +16,8 @@
+ #Config:NCP:SocketPath "system:/usr/local/sbin/spi-server -p - -s /dev/spidev2.0"
+ #Config:NCP:SocketPath "serial:/dev/ttyO1,raw,b115200,crtscts=1"
+ 
++Config:NCP:SocketPath "/dev/ttyACM0"
++
+ # The desired NCP driver to use.
+ # Default value is `spinel`.
+ #
