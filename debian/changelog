@@ -1,3 +1,9 @@
+wpantund (0.07.01-346-g697af9d-1ubuntu3) disco; urgency=medium
+
+  * disco
+
+ -- Tokita Hiroshi <soburi@gmail.com>  Sat, 05 Sep 2020 21:03:17 +0900
+
 wpantund (0.07.01-346-g697af9d-1ubuntu2) focal; urgency=medium
 
   * Add wpantund.service (Closes: #8)
