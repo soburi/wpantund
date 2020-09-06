@@ -1,3 +1,9 @@
+wpantund (0.07.01-346-g697af9d-1ubuntu5) focal; urgency=medium
+
+  * republish
+
+ -- Tokita Hiroshi <soburi@gmail.com>  Sun, 06 Sep 2020 09:59:11 +0900
+
 wpantund (0.07.01-346-g697af9d-1ubuntu4) focal; urgency=medium
 
   * correct permission check
