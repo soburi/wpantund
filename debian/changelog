@@ -1,3 +1,9 @@
+wpantund (0.07.01-361-g8204681-1ubuntu8) hirsute; urgency=medium
+
+  * update
+
+ -- Tokita Hiroshi <soburi@gmail.com>  Sat, 22 May 2021 23:21:24 +0900
+
 wpantund (0.07.01-361-g8204681-1ubuntu7) hirsute; urgency=medium
 
   * quilt update
