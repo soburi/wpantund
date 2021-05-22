@@ -1,3 +1,9 @@
+wpantund (0.07.01-361-g8204681-1ubuntu6) hirsute; urgency=medium
+
+  * hirsute
+
+ -- Tokita Hiroshi <soburi@gmail.com>  Sat, 22 May 2021 22:37:23 +0900
+
 wpantund (0.07.01-346-g697af9d-1ubuntu5) focal; urgency=medium
 
   * republish
