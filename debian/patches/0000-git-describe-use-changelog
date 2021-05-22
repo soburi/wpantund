@@ -24,7 +24,7 @@
  CLEANFILES    = $(top_builddir)/$(subdir)/version.c
 --- a/src/wpanctl/Makefile.am
 +++ b/src/wpanctl/Makefile.am
-@@ -120,7 +120,8 @@
+@@ -130,7 +130,8 @@
  	$(NULL)
  
  
